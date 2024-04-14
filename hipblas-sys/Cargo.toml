@@ -12,4 +12,4 @@ links = "hipblas"
 libc = "0.2.74"
 
 [build-dependencies]
-bindgen = { version = "0.65.1", optional = true }
+bindgen = { version = "0.69.4", optional = true }

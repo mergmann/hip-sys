@@ -3,7 +3,7 @@ use std::{
     path::PathBuf,
 };
 
-const DEFAULT_HIP_PATH: &str = "/opt/rocm/hip";
+const DEFAULT_HIP_PATH: &str = "/opt/rocm/";
 
 fn try_get_path_from_var(v: &str) -> Option<PathBuf> {
     match var(v) {

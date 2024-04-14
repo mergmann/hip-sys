@@ -34,7 +34,7 @@ fn main() {
 
     let hip_lib = hip_path.join("lib");
     println!("cargo:rustc-link-search=native={}", hip_lib.display());
-    println!("cargo:rustc-link-lib=dylib=amdhip64");
+    println!("cargo:rustc-link-lib=dylib=hiprtc");
 
     #[cfg(feature = "bindgen")]
     {

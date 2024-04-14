@@ -1,8 +1,8 @@
 [package]
 name = "hip-runtime-sys"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["charles-r-earp <charles.r.earp@gmail.com>"]
-edition = "2018"
+edition = "2021"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/cjordan/hip-sys"
 description = "Bindings for the HIP runtime"
@@ -12,4 +12,4 @@ links = "amdhip64"
 libc = "0.2.73"
 
 [build-dependencies]
-bindgen = { version = "0.65.1", optional = true }
+bindgen = { version = "0.69.4", optional = true }

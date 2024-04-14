@@ -1,6 +1,6 @@
 [package]
 name = "hip-sys"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["charles-r-earp <charles.r.earp@gmail.com>"]
 edition = "2018"
 rust-version = "1.60"
@@ -9,10 +9,11 @@ repository = "https://github.com/cjordan/hip-sys"
 description = "Bindings for HIP"
 
 [features]
-blas = ["hipblas-sys"]
+blas = ["dep:hipblas-sys"]
+rtc = ["dep:hiprtc-sys"]
 bindgen = ["hip-runtime-sys/bindgen", "hipblas-sys?/bindgen"]
 
 [dependencies]
-hip-runtime-sys = { version = "0.1.0", path = "hip-runtime-sys" }
-
-hipblas-sys = { version = "0.1.0", path = "hipblas-sys", optional = true }
+hip-runtime-sys = { version = "0.2.0", path = "./hip-runtime-sys" }
+hipblas-sys = { version = "0.1.0", path = "./hipblas-sys", optional = true }
+hiprtc-sys = { version = "0.2.0", path = "./hiprtc-sys", optional = true }

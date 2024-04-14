@@ -1,0 +1,11 @@
+[package]
+name = "hiprtc-sys"
+version = "0.2.0"
+edition = "2021"
+links = "hiprtc"
+
+[dependencies]
+libc = "0.2.73"
+
+[build-dependencies]
+bindgen = { version = "0.69.4", optional = true }
