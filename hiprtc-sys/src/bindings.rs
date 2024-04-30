@@ -3,6 +3,8 @@
 #![allow(non_camel_case_types)]
 #![allow(non_upper_case_globals)]
 #![allow(non_snake_case)]
+// Suppress warning for u128 as its used by bindgen
+#![allow(improper_ctypes)]
 
 pub const __HIP_ARCH_HAS_GLOBAL_INT32_ATOMICS__: u32 = 0;
 pub const __HIP_ARCH_HAS_GLOBAL_FLOAT_ATOMIC_EXCH__: u32 = 0;
